@@ -1,11 +1,32 @@
 /* Global Styles */
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Raleway', sans-serif;
     background-color: #fff;
     color: #333;
     margin: 0;
     padding: 0;
 }
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    color: black
+}
+.contactme {
+    text-align: center;
+}
+.mark {
+    background-color: LemonChiffon;
+    color: black;
+  }
 
 .container {
     max-width: 1100px;
@@ -13,12 +34,12 @@ body {
     padding: 40px 20px;
 }
 
-/* Hero Section (Fixed Dimensions) */
+/* Hero Section */
 .hero {
-    background: url('data/wallst.jpg') no-repeat center center/cover;
+    background: url('data/bg2.jpg') no-repeat center center/cover;
     text-align: center;
-    padding: 100px 20px;
-    color: white;
+    padding: 10px 20px;
+    color: Teal;
 }
 
 .hero h1 {
@@ -28,11 +49,11 @@ body {
 }
 
 .hero h2 {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: normal;
 }
 
-/* About Section (Fixed Width and Spacing) */
+/* About Section */
 .about {
     display: flex;
     align-items: flex-start;
@@ -52,38 +73,82 @@ body {
     text-align: center;
 }
 
-.about img {
-    width: 100%;
+.profile-container {
+    margin-top: 50px;
+}
+.profile-pic {
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.greeting-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.social-container {
+    margin-top: 20px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.social-container h3 {
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 10px;
 }
 
 /* Social Links */
 .social-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    text-align: center;
     padding: 20px;
 }
 
-.social-links a {
+.social-title {
+    text-align: center;
+    padding: 20px;
+}
+
+.social-links h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.social-button {
     text-decoration: none;
-    color: white;
     font-weight: bold;
-    background: #222;
     padding: 12px;
-    width: 180px;
+    width: 200px;
     text-align: center;
     border-radius: 5px;
-    transition: 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 5px auto;
+    background: #f4f4f4;
+    color: #333;
+    border: 1px solid #ddd;
 }
 
-.social-links a:hover {
-    background: #444;
+.social-button i {
+    font-size: 18px;
 }
 
-/* Projects Section (Fixed Width and Alignment) */
+.notion-callout__content a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;  /* Ensures links are black */
+}
+
+.notion-callout__content a:hover {
+    color: #555;  /* Slight gray on hover for effect */
+}
+
+
+/* Projects Section */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -95,8 +160,13 @@ body {
     background: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
 }
 
 /* Contact Form */
@@ -109,28 +179,6 @@ body {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form input, .contact-form textarea {
-    margin: 10px 0;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
-}
-
-.contact-form button {
-    background: #222;
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-}
-
-.contact-form button:hover {
-    background: #444;
 }
 
 /* Footer */

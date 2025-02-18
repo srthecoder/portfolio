@@ -5,27 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rika Rudra - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <div class="hero">
-            <h1>Rika Rudra</h1>
-            <h2>Data Analyst</h2>
+            <h1>RIKA RUDRA</h1>
+            <h2>Data Scientist</h2>
         </div>
     </header>
 
     <section id="about">
         <div class="container about">
             <div class="about-left">
-                <h2>About Me</h2>
-                <p><strong>Hello! I'm Swachandrika aka Rika</strong>, a data analyst passionate about collecting and analyzing data...</p>
+                <h2>About Me</h2><hr size="1" color="silver">
+                <p align= "justify">Hello! I’m Swachandrika Rudra, a <span class="mark">data-driven problem solver</span> with a passion for leveraging analytics to drive impactful business decisions. Curently I am pursuing a Master's in <span class="mark">Applied Data Science</span> at the <span class="mark"><b><i>University of Southern California.</b></i></span> 
+                    <br><br>With a strong foundation in <span class="mark">Data Science, Machine Learning, and Big Data Technologies</span>, I specialize in <span class="mark">uncovering <b><i>actionable insights</i></b> from <b><i>complex datasets</b></i></span>. 
+                    My experiences involve, developing ML-driven analytics pipelines to optimize research efficiency, automated high-volume processes with Robotic Process Automation (RPA), and engineering predictive models for healthcare and scientific discovery. 
+                    <br><br>I find that I thrive in <span class="mark">dynamic, fast-paced environments,</span> continuously adapting to evolving data landscapes. Whether it’s developing cutting-edge AI solutions, optimizing data pipelines, 
+                    or deriving insights that inform strategy, I am eager to contribute my expertise to a team that values <span class="mark">curiosity, innovation, and strategic problem-solving</span>.
+                    
+                    <br><br>Let’s connect and explore how we can <span class="mark">turn data into impact</span>, delivering data-driven excellence and digital transformation together!</p>
             </div>
             <div class="about-right">
-                <img src="data/IMG_6488.jpg" alt="Your Photo">
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/swachandrika-rudra">LinkedIn</a>
-                    <a href="https://github.com/srthecoder">GitHub</a>
-                    <a href="https://public.tableau.com/app/profile/rika.rudra">Tableau</a>
+                <img src="data/IMG_6488.jpg" alt="Profile Picture" class="profile-pic">
+                <p class="greeting-text">Hello, I'm Rika!</p>
+                <div class="social-container">
+                    <h3 class="social-title">Socials</h3>
+                    
+                    <div class="social-button">
+                        <div class="notion-callout__icon">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Icon" width="20" height="20">
+                        </div>
+                        <div class="notion-callout__content">
+                            <strong><a href="https://www.linkedin.com/in/swachandrika-rudra" class="notion-link" target="_blank">LinkedIn</a></strong>
+                        </div>
+                    </div>
+                    
+                    <div class="social-button">
+                        <div class="notion-callout__icon">
+                            <img src="https://img.icons8.com/?size=100&id=Bb6V8LfUDtPJ&format=png&color=000000" alt="Email Icon" width="25" height="25">
+                        </div>
+                        <div class="notion-callout__content">
+                            <strong><a href="mailto:rikarudra23@gmail.com" class="notion-link" target="_blank">&nbspEmail&nbsp</a></strong>
+                        </div>
+                    </div>
+                    
+                    <div class="social-button">
+                        <div class="notion-callout__icon">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub Icon" width="20" height="20">
+                        </div>
+                        <div class="notion-callout__content">
+                            <strong><a href="https://github.com/srthecoder" class="notion-link" target="_blank">GitHub</a></strong>
+                        </div>
+                    </div>
+                    
+                    <div class="social-button">
+                        <div class="notion-callout__icon">
+                            <img src="https://img.icons8.com/?size=100&id=9Kvi1p1F0tUo&format=png&color=000000" alt="Tableau Icon" width="20" height="20">
+                        </div>
+                        <div class="notion-callout__content">
+                            <strong><a href="https://public.tableau.com/app/profile/rika.rudra" class="notion-link" target="_blank">Tableau</a></strong>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -62,16 +105,21 @@
 
     <section id="contact">
         <div class="container">
-            <h2>Contact Me</h2>
-            <form class="contact-form">
-                <label>Name</label>
-                <input type="text" required>
-                <label>Email</label>
-                <input type="email" required>
-                <label>Message</label>
-                <textarea required></textarea>
-                <button type="submit">Submit</button>
+            <h2 class="contactme">Contact Me</h2>
+            <form class="contact-form" action="https://formspree.io/f/xvgzvnyd" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <hr>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <hr>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <hr>
+                <button type="submit">Send</button>
             </form>
+            <!-- Success Message (Initially Hidden) -->
+            <p id="success-message" style="display: none; color: green; font-weight: bold;">Message sent successfully!</p>
         </div>
     </section>
 
@@ -80,3 +128,4 @@
     </footer>
 </body>
 </html>
+<!-- /viewform?usp=pp_url&entry.114087656=John+Doe&entry.1540157243=johndoe@gmail.com&entry.1983812135=Conratulations!+You're+Hired! -->
