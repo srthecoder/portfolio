@@ -13,6 +13,7 @@ h1 {
     font-weight: 600;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
+
 h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
@@ -20,6 +21,65 @@ h2 {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     color: black
 }
+
+h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    color: black
+}
+.project-logo{
+    width: 200px;
+    height: 80px;
+    /* border-radius: 30%; */
+    /* object-fit: cover; */
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.project-tags {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px; /* Adjust spacing between tags */
+    margin-top: 8px;
+}
+
+.tools-label {
+    background: #f8d7da; /* Light red background */
+    color: #852a2a; /* Dark red text */
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.tag, .tag a {
+    background: #e0e0e0; /* Soft gray background */
+    color: #333; /* Dark text */
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-weight: 500;
+    pointer-events: none;
+    text-decoration: none !important; /* Force remove underline */
+    cursor: default;
+}
+
+.github-link {
+    display: block;
+    margin-top: 12px;
+    font-size: 14px; 
+    font-weight: bold;
+    color: #0366d6;
+    text-decoration: none;
+    text-align: right;
+}
+
+.github-link:hover {
+    text-decoration: underline;
+}
+
 .contactme {
     text-align: center;
 }
@@ -151,9 +211,10 @@ h2 {
 /* Projects Section */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* Ensures two equal columns */
     gap: 20px;
     padding: 20px 0;
+    align-items: start; /* Aligns items at the top */
 }
 
 .project-card {
@@ -162,11 +223,15 @@ h2 {
     border-radius: 10px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: 0.3s ease-in-out;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 /* Contact Form */
@@ -188,4 +253,26 @@ footer {
     background: #222;
     color: white;
     margin-top: 40px;
+}
+
+
+.project-details {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.project-details h1, .project-details h2, .project-details h3 {
+    color: #222;
+}
+
+.project-details a {
+    color: #0366d6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-details a:hover {
+    text-decoration: underline;
 }
