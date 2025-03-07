@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tata Hospital Data Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tata Hospital Data Analysis</h1>
+    </header>
+
+    <section class="project-details">
+        <h2>Project Overview</h2>
+        <p>This project explores <b>gene expression</b>-based machine learning models for pan-cancer survival analysis, leveraging data from Genomic Data Commons Data Portal.</p>
+
+        <h3>Tools Used</h3>
+        <span class="tools-label">Tools:</span>
+        <span class="tag">Machine Learning</span>
+        <span class="tag">Genomics</span>
+        <span class="tag">Survival Analysis</span>
+        <span class="tag">Python</span>
+        <span class="tag">R</span>
+
+        <h3>Relevant Link</h3>
+        <a href="https://github.com/your-repo-url" target="_blank">GitHub Repository</a>
+
+        <h3>Table of Contents</h3>
+        <ul>
+            <li><a href="#background">Project Background</a></li>
+            <li><a href="#summary">Executive Summary</a></li>
+            <li><a href="#insights">Insights Deep-Dive</a></li>
+            <ul>
+                <li><a href="#models">ML Model Performance</a></li>
+                <li><a href="#biomarkers">Key Biomarkers Identified</a></li>
+            </ul>
+        </ul>
+
+        <h3 id="background">Project Background</h3>
+        <p align="justify">The surge of big data in recent years, has created both opportunities and challenges in the field of cancer research. 
+            Researchers today have unparalleled access to a wide range of diverse and multidimensional data, such as genomic data, clinical data, imaging data, and real-time patient monitoring data. 
+            This wealth of data has the potential to uncover underlying patterns, identify novel biomarkers, and reveal previously unknown links between genetic mutations, tumor features, therapy responses, and patient outcomes. 
+            The sheer volume, variety, and complexity of the data, on the other hand, necessitates powerful computing tools, innovative algorithms, and robust data management systems. 
+            Because distinct datasets may have varying data formats, quality, and annotation standards, data integration and harmonization become crucial. 
+            In our research, we aimed to get past the above challenges and make optimal use of the data to serve our purpose. 
+            We focused our research on understanding the significance of genes in survival studies by utilizing sophisticated supervised machine learning models, aiming to detect patient survival outcomes. 
+            Our investigation revealed intriguing insights into the performance of gene data in predictive models highlighting the importance of incorporating clinical and multi-omics data for improved accuracy, 
+            in addition, we concluded that narrowing down the gene dataset to a specialized set of highly upregulated, differentially expressed genes with distinct survival curves can drastically improve model performance. 
+            However, it is essential to acknowledge that mortality in cancer is influenced by various factors beyond genes alone and key components of patient history should be incorporated to obtain a comprehensive understanding of patient outcomes.
+            We anticipate that our research will lead the way for future research, driving the development of more accurate and robust models for cancer survival analyses, ultimately contributing to aid clinicians in diagnosis, betterment of treatment methods and improve the overall quality of patient care.
+            </p>
+        
+        <h3 id="summary">Summary</h3>
+        <p align="justify">We analyzed genomic datasets from Genomic Data Commons Data Portal, applying machine learning techniques to predict cancer patient survival rates. 
+            Our models integrate biological insights with statistical learning to uncover key survival patterns.</p>
+
+        <p align="justify"><b>Hypothesis</b>:The coordinated expression and activity of proteasomal genes as a unit may have prognostic significance in cancer since alterations in the expression levels or activity of proteasomes have been associated with clinical outcomes in various cancers. </li>
+        </p>
+
+        <p>Key takeaways from our research:</p>
+        <ul>
+            <li>Developed an ML-based survival prediction model using Kaplan-Meier and Cox Regression.</li>
+            <li>Identified key gene expression biomarkers linked to survival outcomes.</li>
+            <li>Achieved an <b>82%</b> prediction accuracy on real-world patient data.</li>
+        </ul>
+
+        <h3 id="insights">Insights Deep-Dive</h3>
+        <img src="data/scores.png" alt="table" width="500" height="250">
+                    
+        <h4 id="models">ML Model Performance</h4>
+        <p>We compared Random Forest, Cox Proportional Hazards, and Deep Learning models, finding that Random Forest yielded the best AUC score of 0.82.</p>
+
+        <h4 id="biomarkers">Key Biomarkers Identified</h4>
+        <p>Using feature importance analysis, we identified five crucial genes strongly associated with patient survival rates.</p>
+
+        <br>
+        <a href="index.html">⬅ Back to Homepage</a>
+    </section>
+</body>
+</html>
